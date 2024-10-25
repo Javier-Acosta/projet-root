@@ -28,4 +28,3 @@
      const superheroes = obtenerSuperheroesMayorDe30();
      res.send(renderizarListaSuperheroes(superheroes));
  }
- }
