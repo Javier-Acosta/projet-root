@@ -3,15 +3,14 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import superheroesDataSource from './superheroesDataSource.mjs';
 
-const __filename = fileURLToPath(
-    import.meta.url);
+const __filename = fileURLToPath();
 
 const __dirname = path.dirname(__filename);
 
 export default class SuperheroesFileRepository extends superheroesDataSource {
     constructor() {
         super();
-        this.filePath = path.join(__dirname, '../superheroes.txt');
+        this.filePath = path.join(__dirname, './superheroes.txt');
     }
 
     obtenerTodos() {
