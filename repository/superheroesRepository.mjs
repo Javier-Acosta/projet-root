@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import superheroesDataSource from './superheroesDataSource.mjs';
 
-const __filename = fileURLToPath();
+const __filename = fileURLToPath(meta.url);
 
 const __dirname = path.dirname(__filename);
 
