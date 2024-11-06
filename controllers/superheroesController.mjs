@@ -9,7 +9,7 @@
          res.send(renderizarSuperheroe(superheroe));
 
      } else {
-         res.status(400).send({ mensaje: 'Superhéroe no encontrado' });
+         res.status(400).send({ mensaje: 'Superhéroe NO encontrado' });
      }
  }
  export function buscarSuperheroesPorAtributoController(req, res) {
